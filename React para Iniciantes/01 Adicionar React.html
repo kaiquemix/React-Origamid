@@ -31,19 +31,15 @@
         //useState é um hook que define uma variavel reativa;
         const [count, setCount] = React.useState(0);
 
-        /*  Criando a função por fora em vez de direto no ONCLICK
-         const comprar() {
-          setCount(count + 1)
-         }
-         <button onClick={comprar}>
-             Comprar: {count}
-          </button> */
+        function comprar() {
+          setCount(count + 1);
+        }
+
+        <button onClick={comprar}>Comprar: {count}</button>;
 
         return (
           <div>
-            <button onClick={() => setCount(count + 1)}>
-              Comprar: {count}
-            </button>
+            <button onClick={comprar}>Comprar: {count}</button>
             <p>Total: {count}</p>
             <p>Preço: R$ {count * 250}</p>
           </div>
