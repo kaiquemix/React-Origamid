@@ -1,9 +1,9 @@
 import React from "react";
 
-const Modal = ({ modal, setModal }) => {
+const Modal = ({ modal, setModal }: any) => {
   if (modal === true)
     return (
-      <div className="">
+      <div>
         Esse é o modal. <button onClick={() => setModal(false)}>Fechar</button>
       </div>
     );
