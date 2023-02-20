@@ -10,11 +10,12 @@ import Execexpressoesarray from "./components/tsx arrays/Execexpressoes";
 import Events from "./components/events/events";
 import Estado from "./components/React Hooks/Usestate/Estado";
 import Produto from "./components/React Hooks/Usestate/exec/Produto";
+import Useeffect from "./components/React Hooks/UseEffect/useEffect";
 
 const App = () => {
   return (
     <>
-      <Produto />
+      <Useeffect />
     </>
   );
 };
